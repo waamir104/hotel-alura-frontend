@@ -1,0 +1,24 @@
+.container-fluid {
+  color: #fff;
+
+  .col-md-4-container {
+    margin-bottom: 2rem;
+
+    .b {
+      border-left: 6px solid #fff;
+      height: 1.8rem;
+      padding-left: 8px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      padding-top: .5rem;
+    }
+
+    a:hover {
+      color: rgb(29, 117, 21);
+    }
+  }
+}
