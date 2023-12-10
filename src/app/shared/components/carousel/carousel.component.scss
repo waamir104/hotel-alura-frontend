@@ -1,0 +1,31 @@
+.carousel-item {
+  height: 40rem;
+
+  .carousel_img_container-1 {
+    height: 100%;
+    width: 100%;
+    background: url('../../../../assets/img/carousel/front-hotel.jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  .carousel_img_container-2 {
+    height: 100%;
+    width: 100%;
+    background: url('../../../../assets/img/carousel/nature.jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  .carousel_img_container-3 {
+    height: 100%;
+    width: 100%;
+    background: url('../../../../assets/img/carousel/room.jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  .carousel_img_container-4 {
+    height: 100%;
+    width: 100%;
+    background: url('../../../../assets/img/carousel/tents.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
