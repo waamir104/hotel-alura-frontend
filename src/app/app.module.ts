@@ -11,6 +11,8 @@ import { SignInComponent } from './shared/components/sign-in/sign-in.component';
 import { SignUpComponent } from './shared/components/sign-up/sign-up.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RoomsPaginationComponent } from './shared/components/rooms-pagination/rooms-pagination.component';
+import { RoomComponent } from './shared/components/rooms-pagination/room/room.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
     CarouselComponent,
     SignInComponent,
     SignUpComponent,
-    FooterComponent
+    FooterComponent,
+    RoomsPaginationComponent,
+    RoomComponent
   ],
   imports: [
     BrowserModule,
