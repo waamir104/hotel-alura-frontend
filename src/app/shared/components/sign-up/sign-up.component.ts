@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,21 @@ import { Component } from '@angular/core';
 })
 export class SignUpComponent {
 
+  username: string;
+  password: string;
+  pwdConfirmation: string;
+
+  pwdError: boolean = true;
+
+  constructor(http: HttpClient) {}
+
+  register() {
+    if (this.password !== this.pwdConfirmation) {
+
+    }
+  }
+
+  private registerRequest() {
+
+  }
 }
