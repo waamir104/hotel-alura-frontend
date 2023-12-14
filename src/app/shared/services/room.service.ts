@@ -8,10 +8,10 @@ import { Page } from 'src/app/core/domain/page';
 })
 export class RoomService {
 
-  private readonly serverUrl: string = "http://localhost:8080";
+  private readonly serverUrl: string = "http://localhost:8086";
 
   constructor(private http: HttpClient) { }
 
-  rooms$ = (page: number = 0, size: number = 10): Observable<Page> =>
+  rooms$ = (page: number = 0, size: number = 9): Observable<Page> =>
     this.http.get<any>(`${this.serverUrl}/api/v1/room/list?size=${size}&page=${page}`);
 }
