@@ -1,5 +1,5 @@
 <ng-container *ngIf="( roomPaginationState$ | async ) as state" [ngSwitch]="state.componentState">
-  <div id="pagination_container" class="p-5 d-flex justify-content-center container-fluid flex-wrap" style="margin-top: 60px;">
+  <div id="pagination_container" class="p-5 d-flex justify-content-center flex-column" style="margin-top: 60px;">
     <ng-container *ngSwitchCase="'COMPONENT_ERROR'" class="text-danger">Couldn't load the rooms !!</ng-container>
     <ng-container *ngSwitchCase="'COMPONENT_LOADING'">
       <div class="spinner-border text-danger" role="status">
@@ -7,7 +7,9 @@
       </div>
     </ng-container>
     <ng-container *ngSwitchCase="'COMPONENT_LOADED'">
-      <app-room *ngFor="let room of state.componentData.content; let i = index;" [room]="room"></app-room>
+      <div class="container-fluid d-flex flex-row flex-wrap justify-content-center">
+        <app-room *ngFor="let room of state.componentData.content; let i = index;" [room]="room"></app-room>
+      </div>
       <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-end">
           <li class="page-item">
