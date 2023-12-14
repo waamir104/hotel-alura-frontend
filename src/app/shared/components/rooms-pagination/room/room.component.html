@@ -1,1 +1,7 @@
-<p>room works!</p>
+<a class="card myCard shadow" routerLink="/room/{{ room.id }}">
+    <img src="../../../../../assets/img/room/room-pagination.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{ room.number }}</h5>
+        <p class="card-text">{{room.description}}</p>
+    </div>
+</a>
