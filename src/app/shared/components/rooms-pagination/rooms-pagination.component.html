@@ -9,6 +9,10 @@
       </div>
     </ng-container>
     <ng-container *ngSwitchCase="'COMPONENT_LOADED'">
+      <div class="container-fluid d-flex justify-space-around flex-column">
+        <h3 class="font-weight-bold text-primary text-center">ROOMS</h3>
+        <hr class="mb-5">
+      </div>
       <div class="container-fluid d-flex flex-row flex-wrap justify-content-center">
         <app-room *ngFor="let room of state.componentData.content; let i = index;" [room]="room"></app-room>
       </div>
