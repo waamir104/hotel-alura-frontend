@@ -1,9 +1,11 @@
 <ng-container *ngIf="( roomPaginationState$ | async ) as state" [ngSwitch]="state.componentState">
   <div id="pagination_container" class="p-5 d-flex justify-content-center flex-column" style="margin-top: 60px;">
-    <ng-container *ngSwitchCase="'COMPONENT_ERROR'" class="text-danger">Couldn't load the rooms !!</ng-container>
+    <ng-container *ngSwitchCase="'COMPONENT_ERROR'"><span class="text-danger text-center">Couldn't load the rooms !!</span></ng-container>
     <ng-container *ngSwitchCase="'COMPONENT_LOADING'">
-      <div class="spinner-border text-danger" role="status">
-        <span class="visually-hidden">Loading...</span>
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="spinner-border text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
       </div>
     </ng-container>
     <ng-container *ngSwitchCase="'COMPONENT_LOADED'">
