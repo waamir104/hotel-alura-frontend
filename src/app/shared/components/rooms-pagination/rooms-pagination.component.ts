@@ -22,7 +22,6 @@ export class RoomsPaginationComponent implements OnInit {
       map((response: Page) => {
         this.responseSubject.next(response);
         this.currentPageSubject.next(response.pageable.pageNumber);
-        console.log(response);
         return ({ componentState: "COMPONENT_LOADED", componentData: response })
       }),
       startWith({ componentState: "COMPONENT_LOADING" }),
@@ -35,7 +34,6 @@ export class RoomsPaginationComponent implements OnInit {
       map((response: Page) => {
         this.responseSubject.next(response);
         this.currentPageSubject.next(pageNumber);
-        console.log(response);
         return ({ componentState: "COMPONENT_LOADED", componentData: response })
       }),
       startWith({ componentState: "COMPONENT_LOADED", componentData: this.responseSubject.value }),

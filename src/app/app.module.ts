@@ -15,6 +15,7 @@ import { RoomsPaginationComponent } from './shared/components/rooms-pagination/r
 import { RoomComponent } from './shared/components/rooms-pagination/room/room.component';
 import { MapComponent } from './shared/components/map/map.component';
 import { NewsLetterComponent } from './shared/components/news-letter/news-letter.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NewsLetterComponent } from './shared/components/news-letter/news-letter
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
