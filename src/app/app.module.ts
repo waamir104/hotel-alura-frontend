@@ -13,6 +13,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RoomsPaginationComponent } from './shared/components/rooms-pagination/rooms-pagination.component';
 import { RoomComponent } from './shared/components/rooms-pagination/room/room.component';
+import { MapComponent } from './shared/components/map/map.component';
+import { NewsLetterComponent } from './shared/components/news-letter/news-letter.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { RoomComponent } from './shared/components/rooms-pagination/room/room.co
     SignUpComponent,
     FooterComponent,
     RoomsPaginationComponent,
-    RoomComponent
+    RoomComponent,
+    MapComponent,
+    NewsLetterComponent
   ],
   imports: [
     BrowserModule,
